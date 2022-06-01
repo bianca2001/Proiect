@@ -213,13 +213,15 @@ public class Client extends JFrame {
         try {
             response = in.readLine();
             System.out.println(response);
-            username = name.getName();
-            name.setText("");
-            setLoggedIn();
-            user.dispose();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        username = name.getName();
+        setLoggedIn();
+        name.setText("");
+        user.dispose();
 
     }
 
@@ -260,19 +262,4 @@ public class Client extends JFrame {
 
         add(message, moreVerticalSpace);
     }
-
-    //public static void main(String[] args) {
-
-            //socket.setSoTimeout(10000);
-
-                //String request = keyboard.nextLine();
-                //System.out.println(response);
-
-//                if (request.equals("exit")) {
-//                    System.out.println("Client closed!");
-//                    break;
-//                }
-
-
-    //}
 }

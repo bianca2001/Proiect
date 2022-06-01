@@ -40,9 +40,6 @@ public class ServerMainFrame extends JFrame {
     private void newUser(ActionEvent e) {
         System.out.println("new user");
         try {
-//            File path = new File("target/classes/Client.class");
-//            URLClassLoader urlLoader = new URLClassLoader(new URL[]{path.toURI().toURL()}, this.getClass().getClassLoader());
-//            Class c = urlLoader.loadClass("Client");
             Class c = Class.forName("Client");
             Constructor constructor = c.getConstructor();
             constructor.newInstance();
