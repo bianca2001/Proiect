@@ -1,6 +1,13 @@
-Proiectul contine:
-- database cu JDBC
-- clase pentru person, friendship si messages care comunica cu bazele de date respective
-- serverul deschide un ClientThread pentru fiecare client conectat care primeste comenzile si trimite inapoi un raspuns.
-- GUI pentru server si client folosind swing
-- obiectele din frame aranjeate folosind GridBagLayout
+Simple Social Network
+A project that implements a simple social network using Java with database integration, multithreading and grafical user interface for both the client and server.
+
+Features:
+- Stores data of persons, friendships and messages in PostreSQL and acceses it using JDBC.
+- Handles multiple client connection with a multithread server.
+- Built a GUI for both server and client using Swing.
+
+Technologies:
+- Java
+- JDBC
+- Swing
+- PostgreSQL
