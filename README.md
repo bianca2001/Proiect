@@ -1,4 +1,4 @@
-Simple Social Network
+Simple Social Network:
 A project that implements a simple social network using Java with database integration, multithreading and grafical user interface for both the client and server.
 
 Features:
